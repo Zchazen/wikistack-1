@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+
+{% block title %}{{postTitle}}{% endblock %}
+
+{% block page-header %}
+    <h1 class="uppercase">{{postTitle}}</h1>
+    <hr>
+{% endblock %}
+
+{% block page-content %}
+    {{postContent|marked}}
+{% endblock %}
+
